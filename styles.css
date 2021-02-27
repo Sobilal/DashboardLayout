@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 240px auto;
+  grid-template-rows: 60px auto 60px;
+  grid-template-areas:
+    "topnav topnav"
+    "sidebar main"
+    "sidebar footer";
+}
+
+.topnav {
+  background-color: #9f9f9f;
+  grid-area: topnav;
+}
+
+.sidebar {
+  background-color: #d4d4d4;
+  grid-area: sidebar;
+}
+
+.main {
+  background-color: #f2f2f2;
+  grid-area: main;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer {
+  background-color: #c7c7c7;
+  grid-area: footer;
+}
+
+.companycard {
+  width: 220px;
+  height: auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.companycard > button {
+  padding: 5px 10px;
+  background-color: rgb(74, 160, 74);
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  margin-top: 10px;
+}
